@@ -1,0 +1,30 @@
+include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+  int i;
+vector<int>v(5);
+  cout<<"enter the elemets\n";
+for(int i=0;i<v.size();i++)
+  {
+    cin>>v[i];
+  }
+  for(int i=0;i<v.size();i++)
+  {
+    cout<<"v["<<i<<"]="<<" "<<v[i]<<endl;
+  }
+  int occ;
+  cout<<"enter the element you want to search for the occourece\n";
+  cin>>occ;
+  int count=-1;
+  
+  for( i=0;i<v.size();i++)
+    {
+      if(occ==v[i])
+          count=i;
+    }
+  cout<<"the element of last occurence is :\n"<<count<<endl;
+
+  
+  
+}
