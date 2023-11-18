@@ -1,0 +1,42 @@
+#include <iostream>
+#include<vector>
+using namespace std;
+
+int main() {
+vector<int>v;
+  cout<<"enter the elements:"<<"\n";
+  for(int i=0;i<3;i++)
+    {
+      int element;
+      cin>>element;
+      v.push_back(element);
+    }
+  for(int i=0;i<3;i++)
+    {
+      cout<<"v["<<i<<"]="<<v[i]<<" ";
+      
+    
+    }
+  cout<<endl;
+  bool sortedflag=false;
+  for(int i=1;i<3;i++)
+    {
+      if(v[i]>v[i-1])
+      {
+        sortedflag=true;
+      }
+
+
+    }
+  cout<<sortedflag<<endl;
+}  
+
+
+output:
+
+enter the elements:
+4
+5
+6
+v[0]=4 v[1]=5 v[2]=6 
+1
