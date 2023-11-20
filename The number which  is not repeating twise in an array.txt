@@ -1,0 +1,135 @@
+The first number which is not repeating in array:
+
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+ 
+   vector<int>v(6);
+for(int i=0;i<v.size();i++)
+  {
+    cin>>v[i];
+     
+  }
+  for(int i=0;i<v.size();i++)
+    {
+      cout<<"v["<<i<<"]="<<v[i]<<" ";
+    }
+cout<<endl;
+  for(int i=0;i<v.size();i++)
+    {
+      for(int j=i+1;j<v.size();j++)
+        {
+          if (v[i]==v[j])
+          {
+            v[i]=v[j]=-1;
+          }
+        }
+    }
+  cout<<endl;
+  cout<<"the elements which is not repeating twise is \n"<<endl;
+  int kite=0;
+  for(int i=0;i<v.size();i++)
+    {
+      if(v[i]>1)
+      {
+        kite=v[i];
+        break;
+      }
+
+
+
+    }
+  cout<<kite<<endl;
+
+
+  
+
+
+
+}
+
+output::
+
+1
+2
+1
+2
+4
+5
+v[0]=1 v[1]=2 v[2]=1 v[3]=2 v[4]=4 v[5]=5 
+
+the elements which is not repeating twise is 
+
+4
+
+
+
+##################################################
+the last number which is repeating twise:
+
+
+#include <iostream>
+#include<vector>
+using namespace std;
+int main() {
+ 
+   vector<int>v(6);
+for(int i=0;i<v.size();i++)
+  {
+    cin>>v[i];
+     
+  }
+  for(int i=0;i<v.size();i++)
+    {
+      cout<<"v["<<i<<"]="<<v[i]<<" ";
+    }
+cout<<endl;
+  for(int i=0;i<v.size();i++)
+    {
+      for(int j=i+1;j<v.size();j++)
+        {
+          if (v[i]==v[j])
+          {
+            v[i]=v[j]=-1;
+          }
+        }
+    }
+  cout<<endl;
+  cout<<"the elements which is not repeating twise is \n"<<endl;
+  int kite=0;
+  for(int i=0;i<v.size();i++)
+    {
+      if(v[i]>1)
+      {
+        kite=v[i];
+        
+      }
+
+
+
+    }
+  cout<<kite<<endl;
+
+
+  
+
+
+
+}
+
+
+
+output:::::
+
+1
+2
+1
+2
+5
+6
+v[0]=1 v[1]=2 v[2]=1 v[3]=2 v[4]=5 v[5]=6 
+
+the elements which is not repeating twise is 
+
+6
